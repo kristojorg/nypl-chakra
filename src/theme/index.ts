@@ -5,6 +5,8 @@ import typography from './foundations/typography';
 import colors from './foundations/colors';
 import radii from './foundations/radii';
 import spacing from './foundations/spacing';
+import Checkbox from './components/checkbox';
+import Input from './components/input';
 
 /**
  * See Chakra default theme for shape of theme object:
@@ -22,6 +24,8 @@ const theme = extendTheme({
    */
   components: {
     Button,
+    Checkbox,
+    Input,
   },
 });
 
