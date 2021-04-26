@@ -139,15 +139,20 @@ export const withDisabled = () => (
 
 export const iconButton = () => (
   <Stack direction="row">
-    <IconButton aria-label="Search database" icon={<SearchIcon />} />
-
     <IconButton
-      colorScheme="blue"
+      borderRadius="sm"
       aria-label="Search database"
       icon={<SearchIcon />}
     />
 
-    <IconButton aria-label="Call Segun" size="lg">
+    <IconButton
+      borderRadius="sm"
+      colorScheme="gray"
+      aria-label="Search database"
+      icon={<SearchIcon />}
+    />
+
+    <IconButton aria-label="Call Segun" size="lg" borderRadius="sm">
       <PhoneIcon />
     </IconButton>
   </Stack>
@@ -157,17 +162,6 @@ export const WithButtonGroup = () => (
   <ButtonGroup variant="outline">
     <Button colorScheme="blue">Save</Button>
     <Button>Cancel</Button>
-  </ButtonGroup>
-);
-
-export const attachedButtons = () => (
-  <ButtonGroup size="sm" isAttached variant="outline">
-    <Button marginEnd="-px">Save</Button>
-    <IconButton
-      fontSize="2xl"
-      aria-label="Add to friends"
-      icon={<ChevronDownIcon />}
-    />
   </ButtonGroup>
 );
 
