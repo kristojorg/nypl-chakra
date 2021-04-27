@@ -7,12 +7,14 @@ import radii from './foundations/radii';
 import spacing from './foundations/spacing';
 import Checkbox from './components/checkbox';
 import Input from './components/input';
+import global from './foundations/global';
 
 /**
  * See Chakra default theme for shape of theme object:
  * https://github.com/chakra-ui/chakra-ui/tree/main/packages/theme
  */
 const theme = extendTheme({
+  styles: { global },
   breakpoints,
   radii,
   colors,
