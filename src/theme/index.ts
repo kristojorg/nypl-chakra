@@ -8,6 +8,8 @@ import spacing from './foundations/spacing';
 import Checkbox from './components/checkbox';
 import Input from './components/input';
 import global from './foundations/global';
+import FormLabel from './components/form-label';
+import Form from './components/form';
 
 /**
  * See Chakra default theme for shape of theme object:
@@ -28,6 +30,8 @@ const theme = extendTheme({
     Button,
     Checkbox,
     Input,
+    FormLabel,
+    Form,
   },
 });
 

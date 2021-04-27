@@ -6,9 +6,9 @@ const size = {
     borderRadius: 'none',
   },
   md: {
-    fontSize: 'md',
+    fontSize: 'sm',
     px: 4,
-    h: 10,
+    h: 9,
     borderRadius: 'none',
   },
   sm: {
@@ -49,6 +49,7 @@ const Input = {
   baseStyle: {
     field: {
       borderRadius: 'none',
+      fontSize: 'sm',
     },
   },
   // styles for different sizes ("sm", "md", "lg")

@@ -6,9 +6,9 @@ import {
   FormErrorIcon,
   FormErrorMessage,
   FormHelperText,
-  FormLabel,
   useFormControl,
 } from '@chakra-ui/react';
+import FormLabel from '../src/components/form/Label';
 
 export default {
   title: 'Form Input',
@@ -41,11 +41,11 @@ const Input = React.forwardRef<HTMLInputElement, InputProps & Props>(
   }
 );
 
-export const InputExample = () => (
+export const Default = () => (
   <FormControl id="first-name" isRequired>
-    <FormLabel>First name</FormLabel>
-    <Input placeholder="First Name" />
-    <FormHelperText>Keep it very short and sweet!</FormHelperText>
+    <FormLabel>Label</FormLabel>
+    <Input placeholder="Input Placeholder" />
+    <FormHelperText>Helper text</FormHelperText>
     <FormErrorMessage>Your First name is invalid</FormErrorMessage>
   </FormControl>
 );
