@@ -1,6 +1,5 @@
 import {
   ArrowForwardIcon,
-  ChevronDownIcon,
   EmailIcon,
   PhoneIcon,
   SearchIcon,
@@ -8,7 +7,6 @@ import {
 import { Container, HStack, Stack } from '@chakra-ui/layout';
 import * as React from 'react';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
-import { MdBuild, MdCall } from 'react-icons/md';
 import { BeatLoader } from 'react-spinners';
 import { Button, ButtonGroup, IconButton } from '@chakra-ui/react';
 

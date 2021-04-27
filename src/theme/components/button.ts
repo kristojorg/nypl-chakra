@@ -13,6 +13,18 @@ const ButtonStyle = {
       borderColor: 'gray.200',
       borderRadius: '2xl',
     },
+    solid: {
+      _hover: {
+        _disabled: {
+          bg: 'ui.gray.light-cool',
+          color: 'ui.gray.dark',
+        },
+      },
+      _disabled: {
+        bg: 'ui.gray.light-cool',
+        color: 'ui.gray.dark',
+      },
+    },
   },
   // default values for `size`, `variant`, `colorScheme`
   defaultProps: {
