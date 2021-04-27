@@ -50,6 +50,31 @@ export const Default = () => (
   </FormControl>
 );
 
+export const Optional = () => (
+  <FormControl id="first-name">
+    <FormLabel>Label</FormLabel>
+    <Input placeholder="Input Placeholder" />
+    <FormHelperText>Helper text</FormHelperText>
+    <FormErrorMessage>Your First name is invalid</FormErrorMessage>
+  </FormControl>
+);
+
+export const Errored = () => (
+  <FormControl id="first-name" isRequired isInvalid>
+    <FormLabel>Label</FormLabel>
+    <Input placeholder="Input Placeholder" />
+    <FormErrorMessage>Your First name is invalid</FormErrorMessage>
+  </FormControl>
+);
+
+export const Disabled = () => (
+  <FormControl id="first-name" isDisabled>
+    <FormLabel>Disabled input</FormLabel>
+    <Input placeholder="Input Placeholder" />
+    <FormHelperText>Disabled Reasoning</FormHelperText>
+  </FormControl>
+);
+
 type TextAreaProps = Omit<PropsOf<'textarea'>, OmittedTypes> &
   FormControlOptions;
 

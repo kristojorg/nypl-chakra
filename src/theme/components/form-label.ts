@@ -6,7 +6,7 @@ const baseStyle = {
   transition: 'all 0.2s',
   opacity: 1,
   _disabled: {
-    opacity: 0.4,
+    opacity: 1,
   },
 };
 

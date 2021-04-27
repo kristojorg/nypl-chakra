@@ -50,12 +50,29 @@ const Input = {
     field: {
       borderRadius: 'none',
       fontSize: 'sm',
+      _placeholder: {
+        fontStyle: 'italic',
+        color: 'ui.gray.dark',
+      },
+      _invalid: {
+        _placeholder: {
+          color: 'ui.error',
+        },
+      },
     },
   },
   // styles for different sizes ("sm", "md", "lg")
   sizes,
   // styles for different visual variants ("outline", "solid")
-  variants: {},
+  variants: {
+    outline: {
+      field: {
+        _disabled: {
+          bg: 'ui.gray.xx-light-cool',
+        },
+      },
+    },
+  },
   // default values for `size`, `variant`, `colorScheme`
   defaultProps: {
     size: 'md',
