@@ -3,10 +3,11 @@ import * as React from 'react';
 import {
   FormControlOptions,
   FormControl,
-  FormErrorIcon,
   FormErrorMessage,
   FormHelperText,
   useFormControl,
+  Stack,
+  Textarea,
 } from '@chakra-ui/react';
 import FormLabel from '../src/components/form/Label';
 
@@ -73,4 +74,24 @@ export const Disabled = () => (
     <Input placeholder="Input Placeholder" />
     <FormHelperText>Disabled Reasoning</FormHelperText>
   </FormControl>
+);
+
+export const WithTextArea = () => (
+  <Stack>
+    <FormControl id="basic">
+      <FormLabel>Label</FormLabel>
+      <Textarea />
+      <FormHelperText>Put some text in that box!</FormHelperText>
+    </FormControl>
+    <FormControl id="errored" isInvalid isRequired>
+      <FormLabel>Errored</FormLabel>
+      <Textarea />
+      <FormErrorMessage>Ya did something wrong</FormErrorMessage>
+    </FormControl>
+    <FormControl id="disabled" isDisabled>
+      <FormLabel>Disabled</FormLabel>
+      <Textarea />
+      <FormHelperText>This one is disabled</FormHelperText>
+    </FormControl>
+  </Stack>
 );

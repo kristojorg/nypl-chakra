@@ -1,11 +1,4 @@
-import {
-  FormControl,
-  FormErrorMessage,
-  FormHelperText,
-  FormLabel,
-} from '@chakra-ui/form-control';
 import { CheckIcon, PhoneIcon } from '@chakra-ui/icons';
-import { useDisclosure } from '@chakra-ui/hooks';
 import { Stack } from '@chakra-ui/layout';
 import { chakra } from '@chakra-ui/system';
 import * as React from 'react';

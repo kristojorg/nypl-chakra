@@ -11,6 +11,7 @@ import global from './foundations/global';
 import FormLabel from './components/form-label';
 import Form from './components/form';
 import FormError from './components/form-error';
+import Textarea from './components/text-area';
 
 /**
  * See Chakra default theme for shape of theme object:
@@ -34,6 +35,7 @@ const theme = extendTheme({
     FormLabel,
     Form,
     FormError,
+    Textarea,
   },
 });
 
