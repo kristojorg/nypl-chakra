@@ -21,32 +21,48 @@ export default {
   ],
 };
 
-export const basic = () => <Button colorScheme="blue">Button</Button>;
+export const primary = () => <Button colorScheme="blue">Button</Button>;
 
-export const disabled = () => <Button isDisabled>Button</Button>;
+export const secondary = () => <Button variant="secondary">Button</Button>;
 
-export const secondary = () => (
-  <Button variant="outline" colorScheme="gray">
-    Button
-  </Button>
+export const donation = () => (
+  <Button colorScheme="red">Donate to this library</Button>
+);
+
+export const disabled = () => (
+  <ButtonGroup>
+    <Button isDisabled>Button</Button>
+    <Button variant="outline" isDisabled>
+      Secondary
+    </Button>
+    <Button variant="pill" isDisabled>
+      Disabled
+    </Button>
+  </ButtonGroup>
 );
 
 export const pill = () => (
-  <Button variant="pill" colorScheme="gray" size="sm">
-    Button
-  </Button>
+  <ButtonGroup>
+    <Button variant="pill">Button</Button>
+    <Button variant="pill" isDisabled>
+      Disabled
+    </Button>
+  </ButtonGroup>
 );
 
 export const withVariants = () => (
-  <HStack spacing="24px">
-    <Button variant="solid">Solid</Button>
+  <ButtonGroup>
+    <Button variant="solid" colorScheme="blue">
+      Solid
+    </Button>
+    <Button colorScheme="red">Donate to this library</Button>
     <Button variant="outline">Outline</Button>
     <Button variant="ghost">Ghost</Button>
     <Button variant="link">Link</Button>
     <Button variant="pill" size="sm" colorScheme="gray">
       Pill
     </Button>
-  </HStack>
+  </ButtonGroup>
 );
 
 export const withSizes = () => (
@@ -68,7 +84,7 @@ export const withSizes = () => (
 
 export const WithIcon = () => (
   <Stack direction="row" spacing={4}>
-    <Button leftIcon={<EmailIcon />} variant="solid">
+    <Button leftIcon={<EmailIcon />} variant="solid" colorScheme="blue">
       Email
     </Button>
     <Button rightIcon={<ArrowForwardIcon />} variant="outline">
@@ -79,7 +95,7 @@ export const WithIcon = () => (
 
 export const WithLoading = () => (
   <Stack direction="row" spacing={4} align="center">
-    <Button size="lg" isLoading>
+    <Button isLoading colorScheme="blue">
       Email
     </Button>
 
@@ -118,23 +134,6 @@ export const WithLoadingSpinnerPlacement = () => (
   </Stack>
 );
 
-export const withDisabled = () => (
-  <HStack spacing="24px">
-    <Button isDisabled variant="solid">
-      Button
-    </Button>
-    <Button isDisabled variant="outline">
-      Button
-    </Button>
-    <Button isDisabled variant="ghost">
-      Button
-    </Button>
-    <Button isDisabled variant="link">
-      Button
-    </Button>
-  </HStack>
-);
-
 export const iconButton = () => (
   <Stack direction="row">
     <IconButton
@@ -154,13 +153,6 @@ export const iconButton = () => (
       <PhoneIcon />
     </IconButton>
   </Stack>
-);
-
-export const WithButtonGroup = () => (
-  <ButtonGroup variant="outline">
-    <Button colorScheme="blue">Save</Button>
-    <Button>Cancel</Button>
-  </ButtonGroup>
 );
 
 export const socialButton = () => (

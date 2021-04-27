@@ -46,6 +46,7 @@ const colors: Colors = {
   brand: {
     primary: '#C60917',
     secondary: '#760000',
+    'nypl-red': '#D0343A',
   },
 
   /**
