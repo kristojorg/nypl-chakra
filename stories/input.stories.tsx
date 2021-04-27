@@ -48,15 +48,6 @@ export const WithStates = () => (
   </Stack>
 );
 
-export const WithVariants = () => (
-  <Stack align="start">
-    <Input variant="outline" placeholder="Outline" />
-    <Input variant="filled" placeholder="Filled" />
-    <Input variant="flushed" placeholder="Flushed" />
-    <Input variant="unstyled" placeholder="Unstyled" />
-  </Stack>
-);
-
 export const WithInputAddon = () => (
   <Stack align="start">
     <InputGroup>
@@ -106,40 +97,3 @@ export function PasswordInput() {
     </InputGroup>
   );
 }
-
-function FormError(props: any) {
-  return (
-    <FormErrorMessage
-      mt="0"
-      bg="red.500"
-      color="white"
-      px="1"
-      lineHeight="1em"
-      borderRadius="sm"
-      {...props}
-    />
-  );
-}
-
-export const WithFormControl = () => {
-  const [isError, setIsError] = React.useState(false);
-  return (
-    <Stack align="start">
-      <FormControl id="first-name" isInvalid={isError}>
-        <chakra.div display="flex" mb="2">
-          <FormLabel mb="0" lineHeight="1em">
-            Amount
-          </FormLabel>
-          <FormError>is invalid!</FormError>
-        </chakra.div>
-        <InputGroup size="sm">
-          <InputLeftElement children="$" />
-          <Input placeholder="Enter amount" />
-          <InputRightAddon children=".com" />
-        </InputGroup>
-        <FormHelperText>Keep it very short and sweet!</FormHelperText>
-      </FormControl>
-      <button onClick={() => setIsError(s => !s)}>Toggle Invalid</button>
-    </Stack>
-  );
-};
