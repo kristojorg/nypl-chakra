@@ -36,8 +36,8 @@ const Searchbar: React.FC<SearchBarProps> = ({
         <Button
           colorScheme="blue"
           px={4}
-          // move the button left so there is not a gap in the border at
-          // the corners
+          // move the button left so there is not a gap in the border
+          // caused by the rounded corners
           ml="-2px"
           height="auto"
           isDisabled={isDisabled}
