@@ -50,13 +50,23 @@ const Input = {
     field: {
       borderRadius: 'none',
       fontSize: 'sm',
+      _focus: {
+        borderColor: 'ui.link.primary',
+        _hover: {
+          borderColor: 'ui.link.primary',
+        },
+      },
       _placeholder: {
         fontStyle: 'italic',
         color: 'ui.gray.dark',
       },
       _invalid: {
+        borderColor: 'ui.error',
         _placeholder: {
           color: 'ui.error',
+        },
+        _hover: {
+          borderColor: 'ui.error',
         },
       },
     },
@@ -69,6 +79,15 @@ const Input = {
       field: {
         _disabled: {
           bg: 'ui.gray.xx-light-cool',
+        },
+        _focus: {
+          boxShadow: 'none',
+          _hover: {
+            borderColor: 'ui.link.primary',
+          },
+        },
+        _invalid: {
+          boxShadow: 'none',
         },
       },
     },
